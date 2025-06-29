@@ -145,6 +145,11 @@ jobs:
           python -X utf8 -m talondoc --continue-on-error autogen example/docs -o community --generate-index
           python -X utf8 -m talondoc --continue-on-error build example/docs example/docs/_build
 
+      - name: List all files recursively
+        run: |
+          echo "All files in repo:"
+          find . -type f
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
