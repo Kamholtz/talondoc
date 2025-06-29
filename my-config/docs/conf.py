@@ -98,6 +98,7 @@ talon_package = {
         "community/test/test_dictation.py",
         "community/test/test_formatters.py",
         "community/plugin/listening_timeout/*",
+        "community/plugin/gamepad/*",
         "community/lang/kotlin/kotlin.py",
         "community/lang/kotlin/kotlin.talon",
         "community/lang/kotlin/*",
