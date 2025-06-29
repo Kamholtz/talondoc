@@ -97,6 +97,7 @@ talon_package = {
         "community/test/test_create_spoken_forms.py",
         "community/test/test_dictation.py",
         "community/test/test_formatters.py",
+        "community/plugin/listening_timeout/*",
         "community/lang/kotlin/kotlin.py",
         "community/lang/kotlin/kotlin.talon",
         "community/lang/kotlin/*",
@@ -115,7 +116,6 @@ talon_package = {
         "talon_hud/*",
         "talon_hud/content/*",
         "talon_hud/**/*",
-        # "plugin/listening_timeout/*"
     ],
     "trigger": "ready",
 }
