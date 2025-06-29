@@ -108,7 +108,7 @@ jobs:
   publish-docs-to-github-pages:
     name: Publish docs to GitHub Pages
     runs-on: ubuntu-latest
-    if: startsWith(github.ref, 'refs/tags/')
+    # if: startsWith(github.ref, 'refs/tags/')
     needs: [test]
 
     # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
