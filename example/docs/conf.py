@@ -70,6 +70,7 @@ talon_package = {
         "test/test_create_spoken_forms.py",
         "test/test_dictation.py",
         "test/test_formatters.py",
+        "plugin/listening_timeout/*",
     ],
     "trigger": "ready",
 }
