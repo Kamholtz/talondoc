@@ -152,6 +152,14 @@ jobs:
           echo "All files in repo:"
           find . -type f
 
+
+      - name: Upload Sphinx error log
+        #if: failure()  # Only run if the previous step failed
+        uses: actions/upload-artifact@v4
+        with:
+          name: sphinx-error-log
+          path: /tmp/sphinx-err-*.log
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
