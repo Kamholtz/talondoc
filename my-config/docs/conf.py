@@ -19,7 +19,8 @@ release = "1.0.0"
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-sys.path.append(str(Path("/talon-user").resolve()))
+# sys.path.append(str(Path("/talon-user").resolve()))
+sys.path.append(str(Path("../..").resolve()))
 
 extensions = [
     # Enables support for Markdown
@@ -85,7 +86,7 @@ sphinx_tabs_disable_css_loading = True
 
 talon_package = {
     "name": "user",
-    "path": "/talon-user",
+    "path": "../user",
     "exclude": [
         "community/conftest.py",
         "community/test/stubs/talon/__init__.py",

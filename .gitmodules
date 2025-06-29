@@ -1,3 +1,6 @@
 [submodule "example/community"]
 	path = example/community
 	url = https://github.com/talonhub/community.git
+[submodule "my-config/user/community"]
+	path = my-config/user/community
+	url = https://github.com/Kamholtz/community.git
