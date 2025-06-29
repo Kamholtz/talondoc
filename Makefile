@@ -14,6 +14,10 @@ test:
 serve: .venv/bin/activate
 	@bash -c "source .venv/bin/activate; pip install -q .[docs]; python -X utf8 -m talondoc build ./example/docs ./example/docs/_build --server"
 
+.PHONY: myserve
+myserve: .venv/bin/activate
+	@bash -c "source .venv/bin/activate; pip install -q .[docs]; python -X utf8 -m talondoc build ./my-config/docs ./my-config/docs/_build --server"
+
 .PHONY: docs
 docs: .venv/bin/activate
 	@bash -c "source .venv/bin/activate; pip install -q .[docs]; python -X utf8 -m talondoc build ./example/docs ./example/docs/_build"

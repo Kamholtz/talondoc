@@ -4,10 +4,13 @@
     "ghcr.io/devcontainers/features/python:1": {
       "version": "3.10"
     },
-    "ghcr.io/devcontainers-contrib/features/pre-commit:2": {},
-    "ghcr.io/devcontainers-contrib/features/tox:2": {},
+    // "ghcr.io/devcontainers-contrib/features/pre-commit:2": {},
+    // "ghcr.io/devcontainers-contrib/features/tox:2": {},
     "ghcr.io/devcontainers/features/git:1": {}
   },
+  "mounts": [
+    "source=/home/carl/.talon/user,target=/talon-user,type=bind"
+  ],
   "postCreateCommand": {
     "git-submodules": "git submodule update --init",
     "pre-commit": "pre-commit install",

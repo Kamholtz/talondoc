@@ -4,6 +4,36 @@
     {
       "type": "debugpy",
       "request": "launch",
+      "name": "my talondoc autogen",
+      "module": "talondoc",
+      "args": [
+        "--continue-on-error",
+        "autogen",
+        "${workspaceFolder}/my-config/docs",
+        "-o",
+        "autogen_out",
+        // "community",
+        "--generate-index"
+        // "${workspaceFolder}/my-config/docs/_build",
+      ]
+    },
+    {
+      "type": "debugpy",
+      "request": "launch",
+      "name": "my talondoc build",
+      "module": "talondoc",
+      "args": [
+        "--continue-on-error",
+        "build",
+        "${workspaceFolder}/my-config/docs",
+        "${workspaceFolder}/my-config/docs/_build",
+        "--server"
+        // "community"
+      ]
+    },
+    {
+      "type": "debugpy",
+      "request": "launch",
       "name": "Launch talondoc CLI",
       "module": "talondoc",
       "args": [

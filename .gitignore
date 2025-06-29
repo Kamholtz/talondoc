@@ -169,3 +169,6 @@ cython_debug/
 
 # Vscode
 .vscode/settings.json
+
+my-config/docs/_build
+my-config/docs/autogen_out
