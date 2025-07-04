@@ -67,7 +67,7 @@ def autogen(
     release: str | None = None,
     generate_conf: bool = False,
     generate_index: bool = False,
-    continue_on_error: bool = True,
+    continue_on_error: int = 1,
     format: Literal["md", "rst"] | None = None,
 ) -> None:
     # Ensure config_dir is Path:
