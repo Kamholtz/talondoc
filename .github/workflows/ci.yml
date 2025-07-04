@@ -143,14 +143,14 @@ jobs:
       - name: Build docs
         run: |
           echo "===== autogen ====="
-          python -X utf8 -m talondoc --continue-on-error autogen example/docs -o community --generate-index
+          python -X utf8 -m talondoc --continue-on-error autogen my-config/docs -o community --generate-index
           echo "===== build ====="
-          python -X utf8 -m talondoc --continue-on-error build example/docs example/docs/_build
+          python -X utf8 -m talondoc --continue-on-error build my-config/docs my-config/docs/_build
 
       - name: List all files recursively
         run: |
           echo "All files in repo:"
-          find example/docs/_build -type f
+          find my-config/docs/_build -type f
 
 
       - name: Upload Sphinx error log
@@ -166,7 +166,7 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: example/docs/_build
+          path: my-config/docs/_build
 
       - name: Deploy to GitHub Pages
         id: deployment
