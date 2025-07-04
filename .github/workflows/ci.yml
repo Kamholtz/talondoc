@@ -145,7 +145,7 @@ jobs:
           echo "===== autogen ====="
           python -X utf8 -m talondoc --continue-on-error autogen example/docs -o community --generate-index
           echo "===== build ====="
-          python -X utf8 -m talondoc --continue-on-error build example/docs example/docs/_build
+          python -X utf8 -m talondoc --continue-on-error=1 build example/docs example/docs/_build
 
       - name: List all files recursively
         run: |
