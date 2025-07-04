@@ -253,7 +253,7 @@ def _build(
 
     # Pass continue_on_error:
     if hasattr(ctx, "obj") and "continue_on_error" in ctx.obj:
-        continue_on_error = str(bool(ctx.obj["continue_on_error"]))
+        continue_on_error = 1
         args.extend([f"-Dtalon_continue_on_error={continue_on_error}"])
 
     # NOTE: We always clean before building, as TalonDoc's support for
