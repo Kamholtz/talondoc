@@ -150,7 +150,7 @@ jobs:
       - name: List all files recursively
         run: |
           echo "All files in repo:"
-          find ./my-config/docs -type f
+          find example/docs/_build -type f
 
 
       - name: Upload Sphinx error log
