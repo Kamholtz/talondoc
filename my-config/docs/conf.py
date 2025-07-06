@@ -31,7 +31,6 @@ extensions = [
     "sphinx_tabs.tabs",
     # Enable support for Talon
     "talondoc.sphinx",
-    "sphinx_search.extension"
 ]
 
 # -- Options for MyST --------------------------------------------------------
