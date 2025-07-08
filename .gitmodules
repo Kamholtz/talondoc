@@ -4,3 +4,12 @@
 [submodule "my-config/user/community"]
 	path = my-config/user/community
 	url = https://github.com/Kamholtz/community.git
+[submodule "my-config/user/cursorless-talon"]
+	path = my-config/user/cursorless-talon
+	url = https://github.com/cursorless-dev/cursorless-talon
+[submodule "my-config/user/neovim-talon"]
+	path = my-config/user/neovim-talon
+	url = https://github.com/hands-free-vim/neovim-talon
+[submodule "my-config/user/talon_hud"]
+	path = my-config/user/talon_hud
+	url = https://github.com/chaosparrot/talon_hud
