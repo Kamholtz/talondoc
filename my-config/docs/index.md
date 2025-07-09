@@ -1,4 +1,4 @@
-# TalonDoc
+# TalonDoc (Kamholtz)
 
 :::{toctree}
 :maxdepth: 1
